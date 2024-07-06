@@ -6,9 +6,15 @@ import time
 
 from openai import OpenAI
 # Set the OpenAI API key
-import os
-key = os.environ.get("api_key")
-client = OpenAI(api_key = key)
+# from dotenv import load_dotenv
+
+# # Load environment variables from .env file
+# load_dotenv()
+
+# # Access API key from environment variables
+# key = os.environ.get('API_KEY')
+open_ai_key = os.getenv("open_ai_key")
+client = OpenAI(api_key = open_ai_key)
 
 # Define the name of the bot
 name = 'Renu'
