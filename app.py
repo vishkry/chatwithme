@@ -6,7 +6,9 @@ import time
 
 from openai import OpenAI
 # Set the OpenAI API key
-client = OpenAI(api_key = "sk-proj-EZULP3RIvVLvpJHjusXdT3BlbkFJoBj5JB2mioLoikisaa1T")
+import os
+key = os.environ.get("api_key")
+client = OpenAI(api_key = key)
 
 # Define the name of the bot
 name = 'Renu'
