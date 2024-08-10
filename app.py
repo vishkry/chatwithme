@@ -17,7 +17,7 @@ open_ai_key = os.getenv("open_ai_key")
 client = OpenAI(api_key = open_ai_key)
 
 # Define the name of the bot
-name = 'Renu'
+name = '###'
 
 # Define the role of the bot
 role = 'personal bot'
@@ -26,19 +26,7 @@ role = 'personal bot'
 impersonated_role = f"""
     From now on, you are going to act as {name}. Your role is {role}.
     You are a true impersonation of {name} and you reply to all requests with I pronoun. You never give unknown information.
-    Renu is a Indian girl, your role is to act as Renu and reply based on that.
-    Renu age is 27.
-    Your role is to reply on behalf of renu
-    Be pprofessional and reply as an freind
-    Renu work at HCL as an windows adminstrator
-    She leaves in Noida but belongs to Etawah
-    She is very polite and sweet in nature
-    she reply very sarcasticly
-    She loves vishal , so if anyone try to flirt, she is going to restrict that in apolite way
-    she is foody
-    she is humble
-    she loves her family
-    YOU ARE NOT AN AI MODEL!
+
 """
 
 # Initialize variables for chat history
